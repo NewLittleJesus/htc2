@@ -14,12 +14,37 @@ class Router
 
     public static function init()
     {
-        $controller = \Controllers\BaseController::class;
-        $action = 'index';
+        $controllerName =$defaultControllerName = \Controllers\BaseController::class;
+        $method = $defaultMethod = 'index';
 
         $routeInfoList = explode('/',$_SERVER['REQUEST_URI']);
 
-        var_dump($routeInfoList);
+        $controllerExists = false;
+        if (!empty($routeInfoList[2])) {
+            $tmpControllerName = ucfirst($routeInfoList[2]) . 'Controller';
+            if (class_exists($controllerName, true)) {
+                $controllerName = 'Controllers\\'. $tmpControllerName;
+                $controllerExists = true;
+            }
+        }
+
+        $methodExists = false;
+        if (!empty($routeInfoList[3])) {
+            $tmpMethodName = $routeInfoList[3];
+            if (method_exists($controllerName, $tmpMethodName)) {
+                $method = $tmpMethodName;
+                $methodExists = true;
+            }
+        }
+
+        if (!($controllerExists && $methodExists)) {
+            $controllerName = $defaultControllerName;
+            $method = $defaultMethod;
+        }
+        $controller = new $controllerName;
+        $controller->$method();
+
+        var_dump($controllerName, $method);
 
     }
 

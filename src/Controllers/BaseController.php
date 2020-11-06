@@ -26,7 +26,7 @@ class BaseController
     {
         ob_start();
         require ROOT . DIRECTORY_SEPARATOR . 'Views' . DIRECTORY_SEPARATOR . $templateName;
-        ob_get_clean();
+        ob_flush();
         die();
     }
 }
