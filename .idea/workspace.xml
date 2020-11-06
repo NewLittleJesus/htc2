@@ -11,7 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32951710-d9ee-40d2-b1cb-b58247b97e8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controllers/BaseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/DB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/CircleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/CircleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Circle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Circle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Figure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Figure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Parallelogram.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Parallelogram.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Triangle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Triangle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sqlite3.def" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/sqlite3.def" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sqlite3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/sqlite3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sqlite3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/sqlite3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/test.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +52,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\Views" />
+      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\Database" />
       <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\" />
       <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\Models" />
       <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src" />
-      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -76,7 +93,8 @@
       <workItem from="1604564576538" duration="31000" />
       <workItem from="1604648440314" duration="2166000" />
       <workItem from="1604651196002" duration="2432000" />
-      <workItem from="1604653729174" duration="300000" />
+      <workItem from="1604653729174" duration="4519000" />
+      <workItem from="1604659452607" duration="2221000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1603889409677</created>
@@ -113,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604653858802</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add README.md">
+      <created>1604654166153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604654166153</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +161,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="added namespaces&#10;added index.php&#10;added .htaccess" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="6" key="#PHP" timestamp="1604056712065">
@@ -151,18 +177,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="45" key="#api.php/0.0.1366.728@0.0.1366.728" timestamp="1604056715439" />
-    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604059683095">
+    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604654920113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1604059683095" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604653857203">
+    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1604654920113" />
+    <state x="488" y="44" key="#com.intellij.ide.util.MemberChooser" timestamp="1604656808865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604653857203" />
-    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604059570821">
+    <state x="488" y="44" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604656808865" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604654165207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604059570821" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604654165207" />
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604654899090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604654899090" />
     <state x="561" y="259" key="Github.ShareDialog" timestamp="1604327937097">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -171,10 +201,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1604059605994" />
-    <state x="418" y="85" key="NewPhpClassDialog" timestamp="1604651356203">
+    <state x="418" y="85" key="NewPhpClassDialog" timestamp="1604657431256">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="418" y="85" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604651356203" />
+    <state x="418" y="85" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604657431256" />
     <state x="518" y="286" key="NewPhpFileDialog" timestamp="1604651959120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -183,14 +213,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604654029030" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1604654006492">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1604654171352">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604654006492" />
-    <state x="293" y="20" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604652827515">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604654171352" />
+    <state x="293" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604657443361">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="293" y="20" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1604652827515" />
+    <state x="293" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1604657443361" />
     <state x="484" y="269" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604653925710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -199,5 +229,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604056502467" />
+    <state x="405" y="274" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1604660877924">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="405" y="274" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1604660877924" />
   </component>
 </project>

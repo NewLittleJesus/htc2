@@ -3,10 +3,10 @@
   <meta charset="utf-8">
   <title>Выбор фигуры</title>
  </head>
- <body> 
+ <body>
  Выберите фигуру
  <form name="figurechange" action="Figure.php" method="post" accept-charset="utf-8">
- 
+
 <p><select size="1" name="figure">
 	<option disabled>Выберите фигуру</option>
 	<option value="Круг">Круг</option>
@@ -18,3 +18,9 @@
 </form>
 </body>
 </html>
+
+<ul>
+<?php foreach ($params as $val): ?>
+    <li></li>
+<?php endforeach; ?>
+    </ul>

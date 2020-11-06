@@ -1,18 +1,22 @@
 <?php
 namespace Controllers;
 
-class CircleController
+use Models\Circle;
+
+class CircleController extends BaseController
 {
     public function add()
     {
-        $x1 = $_POST['CenterX'];
-        $y1 = $_POST['CenterY'];
-        $x2 = $_POST['RadX'];
-        $y2 = $_POST['RadY'];
-        $area = $circleArea;
+        $circle = new Circle(
+            $_POST['CenterX'],
+            $_POST['CenterY'],
+            $_POST['RadX'],
+            $_POST['RadY']
+        );
 
-        $circle = new Circle();
+        $circle->save();
 
+        $this->redirect('http://htc2/figure/list');
     }
 
 }

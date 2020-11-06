@@ -44,7 +44,7 @@ switch ($type) {
 
 }
 
-$db = new SQLite3("test.db");
+
 
 $FirstPoint = "INSERT INTO points (x,y) VALUES (:x1, :y1)";
 $sth = $db->prepare($FirstPoint);

@@ -1,21 +1,32 @@
 <?php
+namespace Models;
 
-error_reporting(E_ALL);
+use Database\DB;
 
-$type = $_POST['figure'];
-echo $type;
-
-class Figure
+abstract class Figure
 {
-    protected $type = "";
 
 
-    public function getArea() {}
-    public function getType()
+    /**
+     * @var DB
+     */
+    protected $db;
+
+    public function __construct()
     {
-        return $this->type;
-
+        $this->db = new DB();
     }
+
+    /**
+     * @return string
+     */
+    abstract public function getType();
+
+    /**
+     * Сохраняет фигуру в базу
+     * @return mixed
+     */
+    abstract public function save();
 	
 }
 ?>

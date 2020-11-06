@@ -1,35 +1,24 @@
 <?php
 
-namespace Circle;
-
-
-
-spl_autoload_register(function ($class)
-{
-
-    $path = __DIR__ . $class . '.php';
-
-    if (file_exists($path))
-    {
-        require_once $path;
-    }
-
-});
-
-
+namespace Models;
 
 /**
  * Class circle Вспомогательный класс для вычисления площади круга
  */
 class Circle extends Figure
-    {
+{
 
-	//const PI = 3.1416;
+    //const PI = 3.1416;
 
     /**
      * @var float Вычисленный по точкам радиус круга
      */
-	private $radiusLength;
+    private $radiusLength;
+
+    private $x1;
+    private $y1;
+    private $x2;
+    private $y2;
 
     /**
      * circle constructor.
@@ -38,11 +27,28 @@ class Circle extends Figure
      * @param float $x2 позиция точки 3
      * @param float $y2 позиция точки 4
      */
-    public function __construct ($x1, $y1, $x2, $y2)
+    public function __construct($x1, $y1, $x2, $y2)
     {
-        $this->radiusLength = sqrt(($x2 - $x1)**2 + ($y2 - $y1)**2);
+
+        $this->x1 = $x1;
+        $this->y1 = $y1;
+        $this->x2 = $x2;
+        $this->y2 = $y2;
+
+        $this->radiusLength = sqrt(($x2 - $x1) ** 2 + ($y2 - $y1) ** 2);
 
     }
+
+    public function save()
+    {
+        $firstPointsId = $this->db->savePoints($this->x1, $this->y1);
+        $secondPointsId = $this->db->savePoints($this->x2, $this->y2);
+
+        $figureId = $this->db->saveFigure();
+        // TODO дописать сохранение в БД
+    }
+
+
 
     /**
      * Вычисляет площадь
@@ -50,15 +56,29 @@ class Circle extends Figure
      */
     public function calculateArea()
     {
-        return M_PI*($this->radiusLength*$this->radiusLength);
+        return M_PI * ($this->radiusLength * $this->radiusLength);
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return 'circle';
+    }
+
+    public function find()
+    {
+        $this->db->find(
+                'select * from figures fi join params p on fi.id = p.figure_id join points p2 on p.point_id = p2.id');
     }
 }
 
 $circle = new circle(
-	$_POST['CenterX'], 
-	$_POST['CenterY'],
-	$_POST['RadX'],
-	$_POST['RadY']
+    $_POST['CenterX'],
+    $_POST['CenterY'],
+    $_POST['RadX'],
+    $_POST['RadY']
 );
 $circleArea = $circle->calculateArea();
 echo $circleArea;
@@ -67,8 +87,8 @@ echo $circleArea;
 <!DOCTYPE html>
 <html>
 <body>
-<form name = "DataBaseSend" action = "../../api.php" method="post" accept-charset="utf-8">
-    <input type = "submit" value = "Перейти к базе данных">
+<form name="DataBaseSend" action="../../api.php" method="post" accept-charset="utf-8">
+    <input type="submit" value="Перейти к базе данных">
 </form>
 </body>
 </html>
