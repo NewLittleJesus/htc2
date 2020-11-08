@@ -67,7 +67,7 @@ case 'Треугольник' : ?>
 <?php break;
 case 'Параллелограмм' :	 ?>
 
-<form name = "TriangleParameters" action = "Parallelogram.php" method="post" accept-charset="utf-8">
+<form name = "ParallelogramParameters" action = "Parallelogram.php" method="post" accept-charset="utf-8">
 		Точка A:
  		<input type = "number" name = "AonX" placeholder="Ось X">
  		<input type = "number" name = "AonY" placeholder="Ось Y">

@@ -43,7 +43,7 @@ require_once 'Triangle.php';
 require_once 'Parallelogram.php';
 
 $db = new SQLite3("test.db");
-$sth = $db->prepare("SELECT type, orders FROM figures");
+$sth = $db->prepare("SELECT type, area FROM figures");
 $sth->execute();
 $result = $sth->fetchArray();
 

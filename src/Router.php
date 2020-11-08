@@ -14,16 +14,16 @@ class Router
 
     public static function init()
     {
-        $controllerName =$defaultControllerName = \Controllers\BaseController::class;
+        $controllerName = $defaultControllerName = \Controllers\BaseController::class;
         $method = $defaultMethod = 'index';
 
-        $routeInfoList = explode('/',$_SERVER['REQUEST_URI']);
+        $routeInfoList = explode('/', $_SERVER['REQUEST_URI']);
 
         $controllerExists = false;
         if (!empty($routeInfoList[2])) {
             $tmpControllerName = ucfirst($routeInfoList[2]) . 'Controller';
             if (class_exists($controllerName, true)) {
-                $controllerName = 'Controllers\\'. $tmpControllerName;
+                $controllerName = 'Controllers\\' . $tmpControllerName;
                 $controllerExists = true;
             }
         }
@@ -44,7 +44,6 @@ class Router
         $controller = new $controllerName;
         $controller->$method();
 
-        var_dump($controllerName, $method);
 
     }
 
