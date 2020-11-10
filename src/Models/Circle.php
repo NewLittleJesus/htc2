@@ -44,7 +44,7 @@ class Circle extends Figure
         $firstPointsId = $this->db->savePoints($this->x1, $this->y1);
         $secondPointsId = $this->db->savePoints($this->x2, $this->y2);
 
-        $figureId = $this->db->saveFigure();
+        $figureId = $this->db->saveFigure($this->getType(),$this->calculateArea());
         // TODO дописать сохранение в БД
     }
 
@@ -87,7 +87,7 @@ echo $circleArea;
 <!DOCTYPE html>
 <html>
 <body>
-<form name="DataBaseSend" action="../../api.php" method="post" accept-charset="utf-8">
+<form name="DataBaseSend" action="/src/api.php" method="post" accept-charset="utf-8">
     <input type="submit" value="Перейти к базе данных">
 </form>
 </body>

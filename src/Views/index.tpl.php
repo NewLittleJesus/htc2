@@ -5,7 +5,7 @@
  </head>
  <body>
  Выберите фигуру
- <form name="figurechange" action="Figure.php" method="post" accept-charset="utf-8">
+ <form name="figurechange" action="/src/Models/Figure.php" method="post" accept-charset="utf-8">
 
 <p><select size="1" name="figure">
 	<option disabled>Выберите фигуру</option>

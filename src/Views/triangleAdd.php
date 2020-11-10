@@ -1,6 +1,6 @@
 <html>
 <body>
-<form name = "TriangleParameters" action = "Triangle.php" method="post" accept-charset="utf-8">
+<form name = "TriangleParameters" action = "/src/Models/Triangle.php" method="post" accept-charset="utf-8">
     Точка A:
     <input type = "number" name = "AonX" placeholder="Ось X">
     <input type = "number" name = "AonY" placeholder="Ось Y">

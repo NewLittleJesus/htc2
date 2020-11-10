@@ -10,7 +10,12 @@ class Triangle extends Figure
     /**
      * @var float вычисленные по точкам длины сторон треугольника
      */
-
+    private $x1;
+    private $y1;
+    private $x2;
+    private $y2;
+    private $x3;
+    private $y3;
     private $sideABLenght;
     private $sideBCLenght;
     private $sideACLenght;
@@ -27,6 +32,7 @@ class Triangle extends Figure
 
     public function __construct(float $x1, float $y1, float $x2, float $y2, float $x3, float $y3)
     {
+
         $this->sideABLenght = sqrt(($x2 - $x1) * ($x2 - $x1)
             + ($y2 - $y1) * ($y2 - $y1));
         $this->sideBCLenght = sqrt(($x3 - $x2) * ($x3 - $x2)
@@ -64,7 +70,17 @@ class Triangle extends Figure
 
     public function save()
     {
-        // TODO: Implement save() method.
+        $firstPointsId = $this->db->savePoints($this->x1, $this->y1);
+        $secondPointsId = $this->db->savePoints($this->x2, $this->y2);
+        $thirdPointsId = $this->db->savePoints($this->x3, $this->y3);
+
+
+        $figureId = $this->db->saveFigure($this->getType(),$this->calculateArea());
+    }
+    public function find()
+    {
+        $this->db->find(
+            'select * from figures fi join params p on fi.id = p.figure_id join points p2 on p.point_id = p2.id');
     }
 }
 
@@ -82,7 +98,7 @@ echo $TriangleArea;
 
 <html>
 <body>
-<form name="DataBaseSend" action="api.php" method="post" accept-charset="utf-8">
+<form name="DataBaseSend" action="/src/api.php" method="post" accept-charset="utf-8">
     <input type="submit" value="Перейти к базе данных">
 </form>
 </body>

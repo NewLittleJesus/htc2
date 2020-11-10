@@ -11,6 +11,7 @@ class Parallelogram extends Figure
     /**
      * @var float вычисленные по точкам длины сторон параллелограмма
      */
+
     private $vectorABCoordinateX;
     private $vectorABCoordinateY;
     private $vectorACCoordinateX;
@@ -29,6 +30,8 @@ class Parallelogram extends Figure
 
     public function __construct(float $x1, float $y1, float $x2, float $y2, float $x3, float $y3)
     {
+
+
         $this->vectorABCoordinateX = $x2 - $x1;
         $this->vectorABCoordinateY = $y2 - $y1;
         $this->vectorACCoordinateX = $x3 - $x1;
@@ -54,7 +57,17 @@ class Parallelogram extends Figure
 
     public function save()
     {
-        // TODO: Implement save() method.
+        $firstPointsId = $this->db->savePoints($this->vectorABCoordinateX, $this->vectorABCoordinateY);
+        $secondPointsId = $this->db->savePoints($this->vectorACCoordinateX, $this->vectorACCoordinateY);
+
+
+        $figureId = $this->db->saveFigure($this->getType(), $this->calculateArea());
+
+    }
+    public function find()
+    {
+        $this->db->find(
+            'select * from figures fi join params p on fi.id = p.figure_id join points p2 on p.point_id = p2.id');
     }
 }
 
@@ -72,7 +85,7 @@ echo $ParallelogramArea;
 
 <html>
 <body>
-<form name="DataBaseSend" action="api.php" method="post" accept-charset="utf-8">
+<form name="DataBaseSend" action="/src/api.php" method="post" accept-charset="utf-8">
     <input type="submit" value="Перейти к базе данных">
 </form>
 </body>

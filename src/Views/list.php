@@ -25,7 +25,7 @@
 $db = new SQLite3("test.db");
 $sth = $db->prepare("SELECT type, area FROM figures");
 $sth->execute();
-$result = $sth->fetchArray();
+$result = $sth->fetchAll(); //не работает с sqlite
 
 foreach ($result as $item) {
     ?><tr>
@@ -38,14 +38,14 @@ foreach ($result as $item) {
 </html>
 </table>
 <?php
-require_once 'Circle.php';
-require_once 'Triangle.php';
-require_once 'Parallelogram.php';
+require_once 'src/Models/Circle.php';
+require_once 'src/Models/Triangle.php';
+require_once 'src/Models/Parallelogram.php';
 
 $db = new SQLite3("test.db");
 $sth = $db->prepare("SELECT type, area FROM figures");
 $sth->execute();
-$result = $sth->fetchArray();
+$result = $sth->fetchAll();
 
 foreach ($result as $item) {
 

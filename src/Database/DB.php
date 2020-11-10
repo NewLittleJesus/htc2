@@ -33,12 +33,20 @@ class DB
     /**
      * @return int
      */
-    public function saveParams($figureId, $type, $pointId)
+    public function saveParams($figureId, $type, $PointID)
     {
         // TODO допилить запрос
+        $figureId = "INSERT INTO params (figure_id)  SELECT id FROM figures";
+        $sth = $this->connection->prepare($figureId);
+        $sth->execute();
+
         $PointID = "INSERT INTO params (point_id) SELECT id FROM points";
         $sth = $this->connection->prepare($PointID);
+        $sth->execute();
 
+        $type = "INSERT INTO params (type) VALUES (:type)";
+        $sth = $this->connection->prepare($type);
+        $sth->bindParam('type', $type);
         $sth->execute();
 
         return $this->connection->lastInsertRowID();
