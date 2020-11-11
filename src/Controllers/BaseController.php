@@ -19,7 +19,7 @@ class BaseController
 
     public function list()
     {
-
+        $this->render('list.php');
     }
 
     protected function render(string $templateName, array $params=[])
