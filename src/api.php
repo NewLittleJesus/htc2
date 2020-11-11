@@ -1,5 +1,5 @@
 <?php
-require_once 'test.db';
+
 
 error_reporting(E_ALL);
 
@@ -68,13 +68,11 @@ $sth->execute();
 
 $PointID = "INSERT INTO params (point_id) SELECT id FROM points";
 $sth = $db->prepare($PointID);
-
 $sth->execute();
 
-//$PointType = 2 ;
-//$FigureID = 2;
 
-$figure = "INSERT INTO figures (figure,area) VALUE (:type,:area)";
+
+$figure = "INSERT INTO figures (type,area) VALUES (:type,:area)";
 $sth = $db->prepare($figure);
 $sth->bindParam('type',$type);
 $sth->bindParam('area',$area);

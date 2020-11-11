@@ -25,7 +25,7 @@
 $db = new SQLite3("test.db");
 $sth = $db->prepare("SELECT type, area FROM figures");
 $sth->execute();
-$result = $sth->fetchAll(); //не работает с sqlite
+$result = $sth->fetchArray(SQLITE3_ASSOC);
 
 foreach ($result as $item) {
     ?><tr>
@@ -45,7 +45,7 @@ require_once 'src/Models/Parallelogram.php';
 $db = new SQLite3("test.db");
 $sth = $db->prepare("SELECT type, area FROM figures");
 $sth->execute();
-$result = $sth->fetchAll();
+$result = $sth->fetchAll(SQLITE3_ASSOC);
 
 foreach ($result as $item) {
 

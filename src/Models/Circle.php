@@ -8,7 +8,6 @@ namespace Models;
 class Circle extends Figure
 {
 
-    //const PI = 3.1416;
 
     /**
      * @var float Вычисленный по точкам радиус круга
@@ -41,8 +40,9 @@ class Circle extends Figure
 
     public function save()
     {
-        $firstPointsId = $this->db->savePoints($this->x1, $this->y1);
-        $secondPointsId = $this->db->savePoints($this->x2, $this->y2);
+        $centerId = $this->db->savePoints($this->x1, $this->y1);
+        $radiusId = $this->db->savePoints($this->x2, $this->y2);
+        $pointsId = $this->db->saveParams();
 
         $figureId = $this->db->saveFigure($this->getType(),$this->calculateArea());
         // TODO дописать сохранение в БД

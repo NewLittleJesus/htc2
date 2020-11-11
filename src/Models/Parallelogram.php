@@ -11,7 +11,12 @@ class Parallelogram extends Figure
     /**
      * @var float вычисленные по точкам длины сторон параллелограмма
      */
-
+    private $x1;
+    private $y1;
+    private $x2;
+    private $y2;
+    private $x3;
+    private $y3;
     private $vectorABCoordinateX;
     private $vectorABCoordinateY;
     private $vectorACCoordinateX;
@@ -57,10 +62,10 @@ class Parallelogram extends Figure
 
     public function save()
     {
-        $firstPointsId = $this->db->savePoints($this->vectorABCoordinateX, $this->vectorABCoordinateY);
-        $secondPointsId = $this->db->savePoints($this->vectorACCoordinateX, $this->vectorACCoordinateY);
-
-
+        $firstPointsId = $this->db->savePoints($this->x1, $this->y1);
+        $secondPointsId = $this->db->savePoints($this->x2, $this->y2);
+        $thirdPointsId = $this->db->savePoints($this->x3, $this->y3);
+        $params =
         $figureId = $this->db->saveFigure($this->getType(), $this->calculateArea());
 
     }
