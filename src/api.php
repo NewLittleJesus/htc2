@@ -16,11 +16,6 @@ spl_autoload_register(function ($class)
 });
 
 
-$PointID = "INSERT INTO params (point_id) SELECT id FROM points";
-$sth = $db->prepare($PointID);
-$sth->execute();
-
-
 
 
 

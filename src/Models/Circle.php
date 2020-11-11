@@ -41,14 +41,14 @@ class Circle extends Figure
 
     public function save()
     {
-        $center = $this->db->savePoints($this->x1, $this->y1);
-        $centerType = $this->db->savePointType("center");
-        $radius = $this->db->savePoints($this->x2, $this->y2);
-        $radiusType = $this->db->savePointType("radius");
-        $params = $this->db->saveParams();
+        $this->db->savePoints($this->x1, $this->y1);
+        $this->db->savePointType("center");
+        $this->db->savePoints($this->x2, $this->y2);
+        $this->db->savePointType("radius");
+        $this->db->saveParams();
 
-        $figureId = $this->db->saveFigure($this->getType(),$this->calculateArea());
-        // TODO дописать сохранение в БД
+        $this->db->saveFigure($this->getType(),$this->calculateArea());
+
     }
 
 
