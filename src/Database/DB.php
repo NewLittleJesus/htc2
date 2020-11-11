@@ -22,10 +22,11 @@ class DB
     {
         $sth = $this
             ->connection
-            ->prepare("INSERT INTO points (x,y) VALUES (:x2, :y2);");
+            ->prepare("INSERT INTO points (x,y) VALUES (:x, :y);");
         $sth->bindParam('x',$x);
         $sth->bindParam('y',$y);
         $sth->execute();
+
 
         return $this->connection->lastInsertRowID();
     }
@@ -33,9 +34,9 @@ class DB
     /**
      * @return int
      */
-    public function saveParams($figureId, $type, $PointID)
+    public function saveParams()
     {
-        // TODO допилить запрос
+
         $figureId = "INSERT INTO params (figure_id)  SELECT id FROM figures";
         $sth = $this->connection->prepare($figureId);
         $sth->execute();
@@ -44,12 +45,16 @@ class DB
         $sth = $this->connection->prepare($PointID);
         $sth->execute();
 
-        $type = "INSERT INTO params (type) VALUES (:type)";
-        $sth = $this->connection->prepare($type);
-        $sth->bindParam('type', $type);
-        $sth->execute();
+
 
         return $this->connection->lastInsertRowID();
+    }
+    public function savePointType($pointType)
+    {
+        $pointType = "INSERT INTO params (type) VALUES (:type)";
+        $sth = $this->connection->prepare($pointType);
+        $sth->bindParam('type', $pointType);
+        $sth->execute();
     }
 
     /**

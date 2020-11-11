@@ -71,10 +71,13 @@ class Triangle extends Figure
     public function save()
     {
         $firstPointsId = $this->db->savePoints($this->x1, $this->y1);
+        $firstPointType = $this->db->savePointType("point1");
         $secondPointsId = $this->db->savePoints($this->x2, $this->y2);
+        $secondPointType = $this->db->savePointType("point2");
         $thirdPointsId = $this->db->savePoints($this->x3, $this->y3);
+        $thirdPointType = $this->db->savePointType("point3");
 
-
+        $params = $this->db->saveParams();
         $figureId = $this->db->saveFigure($this->getType(),$this->calculateArea());
     }
     public function find()
