@@ -19,7 +19,5 @@
 </html>
 
 <ul>
-    <?php foreach ($params as $val): ?>
-        <li></li>
-    <?php endforeach; ?>
+
 </ul>

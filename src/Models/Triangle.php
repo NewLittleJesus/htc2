@@ -101,8 +101,8 @@ echo $TriangleArea;
 
 <html>
 <body>
-<form name="DataBaseSend" action="/src/api.php" method="post" accept-charset="utf-8">
-    <input type="submit" value="Перейти к базе данных">
+<form name="DataBaseSend" action="/src/Database/DB.php" method="post" accept-charset="utf-8">
+    <input type="submit" value="Перейти к списку фигур">
 </form>
 </body>
 </html>

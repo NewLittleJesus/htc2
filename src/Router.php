@@ -10,27 +10,7 @@
  */
 class Router
 {
-    public static function start()
-    {
-        $controllerName = $defaultControllerName = \Controllers\BaseController::class;
-        $method = $defaultMethod = "index";
 
-        $routeInfoList = explode('/', $_SERVER['REQUEST_URI']);
-
-        if (isset($routeInfoList[2])&& $routeInfoList [1] != ''){
-            $controllerName = ucfirst($routeInfoList[1] . "Controller");
-            $method = ucfirst($routeInfoList[1] . "Method");
-    }
-        if (isset($routeInfoList[2]) && $routeInfoList[2] != '' )
-        {
-            $method = $routeInfoList[2];
-        }
-
-        $controller = new $controllerName;
-        $controller->$method();
-
-
-    }
 
     public static function init()
     {
