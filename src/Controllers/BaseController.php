@@ -13,20 +13,26 @@ class BaseController
 
     public function index()
     {
-        $this->render('index.tpl.php');
+        $params = [
+
+        ];
+        $this->render('index.tpl.php', $params);
     }
 
-    public function Circle()
+    public function circleTpl()
     {
-        $this->render('Circle.tpl.php');
+        $params = [];
+        $this->render('Circle.tpl.php', $params);
     }
-    public function Triangle()
+    public function triangleTpl()
     {
-        $this->render('Triangle.tpl.php');
+        $params = [];
+        $this->render('Triangle.tpl.php', $params);
     }
-    public function Parallelogram()
+    public function parallelogramTpl()
     {
-        $this->render('Parallelogram.tpl.php');
+        $params = [];
+        $this->render('Parallelogram.tpl.php', $params);
     }
     public function list()
     {
