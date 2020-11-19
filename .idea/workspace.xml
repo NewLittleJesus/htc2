@@ -13,7 +13,9 @@
     <list default="true" id="32951710-d9ee-40d2-b1cb-b58247b97e8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Circle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Circle.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/CircleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/CircleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,13 @@
       <workItem from="1605002619624" duration="8376000" />
       <workItem from="1605086857451" duration="12556000" />
       <workItem from="1605175012071" duration="18082000" />
-      <workItem from="1605266714637" duration="3263000" />
+      <workItem from="1605266714637" duration="3461000" />
+      <workItem from="1605694172324" duration="1396000" />
+      <workItem from="1605709122388" duration="787000" />
+      <workItem from="1605710279058" duration="834000" />
+      <workItem from="1605711317497" duration="4046000" />
+      <workItem from="1605722158963" duration="689000" />
+      <workItem from="1605780366962" duration="5839000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1603889409677</created>
@@ -200,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605202350525</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Незначительные изменения в Controllers">
+      <created>1605277271282</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605277271282</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +246,8 @@
     <MESSAGE value="Доработка Router.php" />
     <MESSAGE value="Доработка сохранения в БД" />
     <MESSAGE value="Незначительные изменения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Незначительные изменения" />
+    <MESSAGE value="Незначительные изменения в Controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Незначительные изменения в Controllers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="6" key="#PHP" timestamp="1604056712065">
@@ -254,10 +270,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="44" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604656808865" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605202340460">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605277263418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605202340460" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605277263418" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604654899090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -5,6 +5,7 @@ use Models\Circle;
 
 class CircleController extends BaseController
 {
+
     public function add()
     {
         $circle = new Circle(
@@ -17,6 +18,7 @@ class CircleController extends BaseController
         $circle->save();
 
         $this->redirect('http://htc2/figure/list');
+        $this->circleTpl();
     }
 
 }

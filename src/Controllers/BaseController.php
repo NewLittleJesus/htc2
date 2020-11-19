@@ -2,6 +2,7 @@
 
 
 namespace Controllers;
+use Models\Figure;
 
 
 class BaseController
@@ -13,25 +14,23 @@ class BaseController
 
     public function index()
     {
-        $params = [
 
-        ];
-        $this->render('index.tpl.php', $params);
+        $this->render('index.tpl.php');
     }
 
     public function circleTpl()
     {
-        $params = [];
+        $params = ['type' => 'circle'];
         $this->render('Circle.tpl.php', $params);
     }
     public function triangleTpl()
     {
-        $params = [];
+        $params = ['type' => 'triangle'];
         $this->render('Triangle.tpl.php', $params);
     }
     public function parallelogramTpl()
     {
-        $params = [];
+        $params = ['type' => 'parallelogram'];
         $this->render('Parallelogram.tpl.php', $params);
     }
     public function list()
