@@ -5,6 +5,11 @@ use Models\Circle;
 
 class CircleController extends BaseController
 {
+    public function form()
+    {
+        $this->circleTpl();
+    }
+
 
     public function add()
     {

@@ -3,8 +3,11 @@
 /**
  * Class Router
  * url http://htc2/ - Главная страница (выбор фигуры)
+ * url http://htc2/circle/form/ - форма заполнения точек круга
  * url http://htc2/circle/add/ - добавление круга
+ * url http://htc2/triangle/form/ - форма заполнения точек треугольника
  * url http://htc2/triangle/add - добавление треугольника
+ * url http://htc2/parallelogram/form - форма заполнения точек параллелограмма
  * url http://htc2/parallelogram/add - добавление параллелограмма
  * url http://htc2/figure/list - список фигур
  */

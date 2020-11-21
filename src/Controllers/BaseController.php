@@ -33,7 +33,7 @@ class BaseController
         $params = ['type' => 'parallelogram'];
         $this->render('Parallelogram.tpl.php', $params);
     }
-    public function list()
+    public function renderList()
     {
         $this->render('list.php');
     }
