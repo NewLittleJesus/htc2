@@ -7,6 +7,10 @@ use Models\Triangle;
 
 class TriangleController extends BaseController
 {
+    public function form()
+    {
+        $this->triangleTpl();
+    }
     public function add()
     {
         $triangle = new Triangle(

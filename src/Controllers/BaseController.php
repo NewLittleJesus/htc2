@@ -20,18 +20,18 @@ class BaseController
 
     public function circleTpl()
     {
-        $params = ['type' => 'circle'];
-        $this->render('Circle.tpl.php', $params);
+
+        $this->render('Circle.tpl.php');
     }
     public function triangleTpl()
     {
-        $params = ['type' => 'triangle'];
-        $this->render('Triangle.tpl.php', $params);
+
+        $this->render('Triangle.tpl.php');
     }
     public function parallelogramTpl()
     {
-        $params = ['type' => 'parallelogram'];
-        $this->render('Parallelogram.tpl.php', $params);
+
+        $this->render('Parallelogram.tpl.php');
     }
     public function renderList()
     {

@@ -11,11 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32951710-d9ee-40d2-b1cb-b58247b97e8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controllers/FigureController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/CircleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/CircleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/ParallelogramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ParallelogramController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/TriangleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TriangleController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <workItem from="1605711317497" duration="4046000" />
       <workItem from="1605722158963" duration="689000" />
       <workItem from="1605780366962" duration="6443000" />
-      <workItem from="1605964707424" duration="2901000" />
+      <workItem from="1605964707424" duration="3233000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1603889409677</created>
@@ -223,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605794818738</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Доработка ЧПУ, по урлам приходит куда нужно">
+      <created>1605969503890</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1605969503890</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +260,8 @@
     <MESSAGE value="Доработка сохранения в БД" />
     <MESSAGE value="Незначительные изменения" />
     <MESSAGE value="Незначительные изменения в Controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Незначительные изменения в Controllers" />
+    <MESSAGE value="Доработка ЧПУ, по урлам приходит куда нужно" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доработка ЧПУ, по урлам приходит куда нужно" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="6" key="#PHP" timestamp="1604056712065">
@@ -278,10 +284,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="44" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604656808865" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605794812464">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605969502279">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605794812464" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605969502279" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604654899090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

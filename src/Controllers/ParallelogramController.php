@@ -7,6 +7,10 @@ use Models\Parallelogram;
 
 class ParallelogramController extends BaseController
 {
+    public function form()
+    {
+        $this->parallelogramTpl();
+    }
     public function add()
     {
         $parallelogram = new Parallelogram(
