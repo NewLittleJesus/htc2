@@ -5,7 +5,7 @@
  </head>
  <body>
  Выберите фигуру
- <form name="figureChange" action="/src/Controllers/BaseController.php" method="post" accept-charset="utf-8">
+ <form name="figureChange" action="http://htc2/public/Base/figureChange" method="post" accept-charset="utf-8">
 
 <p><select size="1" name="figure">
 	<option disabled>Выберите фигуру</option>

@@ -97,12 +97,4 @@ $triangle = new Triangle(
 );
 $TriangleArea = $triangle->calculateArea();
 echo $TriangleArea;
-?>
 
-<html>
-<body>
-<form name="DataBaseSend" action="/src/Database/DB.php" method="post" accept-charset="utf-8">
-    <input type="submit" value="Перейти к списку фигур">
-</form>
-</body>
-</html>

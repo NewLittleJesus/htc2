@@ -40,6 +40,22 @@ class BaseController
         $this->render('list.php');
     }
 
+    public function figureChange()
+    {
+        $type = $_POST['figure'];
+        switch ($type){
+            case 'Круг':
+                $this->redirect('http://htc2/public/circle/form/');
+                break;
+            case 'Треугольник':
+                $this->redirect('http://htc2/public/triangle/form/');
+                break;
+            case 'Параллелограмм':
+                $this->redirect('http://htc2/public/parallelogram/form/');
+        }
+    }
+
+
     protected function render(string $templateName, array $params=[])
     {
         ob_start();

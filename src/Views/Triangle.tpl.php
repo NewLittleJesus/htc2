@@ -1,6 +1,6 @@
 <html>
 <body>
-<form name = "TriangleParameters" action = "/src/Models/Triangle.php" method="post" accept-charset="utf-8">
+<form name = "TriangleParameters" action = "http://htc2/public/triangle/add/" method="post" accept-charset="utf-8">
     Точка A:
     <input type = "number" name = "AonX" placeholder="Ось X">
     <input type = "number" name = "AonY" placeholder="Ось Y">
@@ -18,6 +18,4 @@
 </body>
 </html>
 
-<ul>
 
-</ul>
