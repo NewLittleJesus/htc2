@@ -23,8 +23,7 @@
 <?php
 
 $db = new SQLite3("test.db");
-$sth = $db->prepare("SELECT type, area FROM figures");
-$sth->execute();
+$sth = $db->query("SELECT type, area FROM figures");
 $result = $sth->fetchArray(SQLITE3_ASSOC);
 
 foreach ($result as $item) {
@@ -43,9 +42,9 @@ require_once 'src/Models/Triangle.php';
 require_once 'src/Models/Parallelogram.php';
 
 $db = new SQLite3("test.db");
-$sth = $db->prepare("SELECT type, area FROM figures");
-$sth->execute();
-$result = $sth->fetchAll(SQLITE3_ASSOC);
+$sth = $db->query("SELECT type, area FROM figures");
+
+$result = $sth->fetchArray(SQLITE3_ASSOC);
 
 foreach ($result as $item) {
 

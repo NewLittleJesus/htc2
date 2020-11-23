@@ -88,7 +88,7 @@ $parallelogram = new Parallelogram(
     $_POST['ConX'],
     $_POST['ConY']
 );
-$ParallelogramArea = $parallelogram->calculateArea();
-echo $ParallelogramArea;
+//$ParallelogramArea = $parallelogram->calculateArea();
+//cho $ParallelogramArea;
 ?>
 

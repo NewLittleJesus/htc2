@@ -95,6 +95,7 @@ $triangle = new Triangle(
     $_POST['ConX'],
     $_POST['ConY']
 );
-$TriangleArea = $triangle->calculateArea();
-echo $TriangleArea;
+
+//$TriangleArea = $triangle->calculateArea();
+//echo $TriangleArea;
 

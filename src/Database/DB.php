@@ -22,9 +22,9 @@ class DB
     {
         $sth = $this
             ->connection
-            ->prepare("INSERT INTO points (x,y) VALUES (:x, :y);");
-        $sth->bindParam('x',$x);
-        $sth->bindParam('y',$y);
+            ->prepare("INSERT INTO points (x,y) VALUES (:x, :y)");
+        $sth->bindParam(':x',$x);
+        $sth->bindParam(':y',$y);
         $sth->execute();
 
 
@@ -53,7 +53,7 @@ class DB
     {
         $pointType = "INSERT INTO params (type) VALUES (:type)";
         $sth = $this->connection->prepare($pointType);
-        $sth->bindParam('type', $pointType);
+        $sth->bindParam(':type', $pointType);
         $sth->execute();
     }
 
@@ -66,8 +66,8 @@ class DB
     {
         $figure = "INSERT INTO figures (type,area) VALUES (:type,:area)";
         $sth = $this->connection->prepare($figure);
-        $sth->bindParam('type',$type);
-        $sth->bindParam('area',$area);
+        $sth->bindParam(':type',$type);
+        $sth->bindParam(':area',$area);
         $sth->execute();
 
         return $this->connection->lastInsertRowID();
@@ -86,5 +86,8 @@ class DB
         }
 
         return $sth->execute();
+
+
     }
+
 }

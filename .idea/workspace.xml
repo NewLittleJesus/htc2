@@ -12,9 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="32951710-d9ee-40d2-b1cb-b58247b97e8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/CircleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/CircleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Circle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Circle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Parallelogram.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Parallelogram.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Triangle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Triangle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/list.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +48,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src" />
+      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\" />
+      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\Database\" />
       <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\Views" />
       <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\Database" />
-      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\" />
-      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src\Models" />
-      <recent name="C:\Users\Кирилл\Desktop\workspace\1\OpenServer\domains\htc2\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,7 +102,8 @@
       <workItem from="1606126849833" duration="351000" />
       <workItem from="1606127234130" duration="14000" />
       <workItem from="1606127284225" duration="46000" />
-      <workItem from="1606127360969" duration="7519000" />
+      <workItem from="1606127360969" duration="10094000" />
+      <workItem from="1606148380085" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1603889409677</created>
@@ -255,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606139533281</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Налажена работоспособность переходов на страницы">
+      <created>1606140695961</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606140695961</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +299,8 @@
     <MESSAGE value="Незначительные изменения" />
     <MESSAGE value="Незначительные изменения в Controllers" />
     <MESSAGE value="Доработка ЧПУ, по урлам приходит куда нужно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доработка ЧПУ, по урлам приходит куда нужно" />
+    <MESSAGE value="Налажена работоспособность переходов на страницы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Налажена работоспособность переходов на страницы" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="6" key="#PHP" timestamp="1604056712065">
@@ -315,10 +327,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606128719205" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1606139531536">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1606140694684">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606139531536" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606140694684" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604654899090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -343,10 +355,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604654029030" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1606132742053">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1606141897956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606132742053" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606141897956" />
     <state x="293" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604657443361">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
