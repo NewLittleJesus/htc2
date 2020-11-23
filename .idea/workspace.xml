@@ -12,13 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="32951710-d9ee-40d2-b1cb-b58247b97e8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Figure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Figure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Triangle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Triangle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Circle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Circle.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Parallelogram.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Parallelogram.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Triangle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Triangle.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/CircleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/CircleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Circle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Circle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Parallelogram.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Parallelogram.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +99,7 @@
       <workItem from="1606126849833" duration="351000" />
       <workItem from="1606127234130" duration="14000" />
       <workItem from="1606127284225" duration="46000" />
-      <workItem from="1606127360969" duration="6473000" />
+      <workItem from="1606127360969" duration="7519000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1603889409677</created>
@@ -252,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606132735821</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Доработка ЧПУ, по урлам приходит куда нужно">
+      <created>1606139533281</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606139533281</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,10 +315,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606128719205" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1606132732125">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1606139531536">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606132732125" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606139531536" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604654899090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

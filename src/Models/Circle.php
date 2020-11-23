@@ -87,13 +87,6 @@ $circleArea = $circle->calculateArea();
 echo $circleArea;
 ?>
 
-<!DOCTYPE html>
-<html>
-<body>
-<form name="DataBaseSend" action="/src/Database/DB.php" method="post" accept-charset="utf-8">
-    <input type="submit" value="Перейти к списку фигур">
-</form>
-</body>
-</html>
+
 
 

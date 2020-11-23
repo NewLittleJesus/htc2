@@ -22,8 +22,8 @@ class CircleController extends BaseController
 
         $circle->save();
 
-        $this->redirect('http://htc2/figure/list');
-        $this->circleTpl();
+
+        $this->redirect('http://htc2/public/figure/list');
     }
 
 }
