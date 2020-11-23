@@ -2,6 +2,7 @@
 namespace Controllers;
 
 use Models\Figure;
+
 class FigureController extends BaseController
 {
 
@@ -9,4 +10,5 @@ class FigureController extends BaseController
     {
         $this->renderList();
     }
+
 }

@@ -5,6 +5,8 @@ namespace Controllers;
 use Models\Figure;
 
 
+
+
 class BaseController
 {
     protected function redirect($path)
@@ -45,4 +47,6 @@ class BaseController
         ob_flush();
         die();
     }
+
 }
+

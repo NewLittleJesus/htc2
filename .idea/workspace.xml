@@ -11,9 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32951710-d9ee-40d2-b1cb-b58247b97e8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/ParallelogramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ParallelogramController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/TriangleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TriangleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/FigureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FigureController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Figure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Figure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Circle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Circle.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +97,12 @@
       <workItem from="1605711317497" duration="4046000" />
       <workItem from="1605722158963" duration="689000" />
       <workItem from="1605780366962" duration="6443000" />
-      <workItem from="1605964707424" duration="3233000" />
+      <workItem from="1605964707424" duration="6888000" />
+      <workItem from="1606039608155" duration="731000" />
+      <workItem from="1606126849833" duration="351000" />
+      <workItem from="1606127234130" duration="14000" />
+      <workItem from="1606127284225" duration="46000" />
+      <workItem from="1606127360969" duration="4766000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1603889409677</created>
@@ -228,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605969503890</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Доработка ЧПУ, по урлам приходит куда нужно">
+      <created>1605969684058</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1605969684058</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,10 +300,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="44" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604656808865" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605969502279">
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606128719205">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605969502279" />
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606128719205" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605969683100">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605969683100" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604654899090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -304,10 +324,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="418" y="85" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604834752637" />
-    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1605968913816">
+    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1606128515857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605968913816" />
+    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606128515857" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1604654029030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
