@@ -42,6 +42,8 @@ class Parallelogram extends Figure
         $this->vectorACCoordinateX = $x3 - $x1;
         $this->vectorACCoordinateY = $y3 - $y1;
 
+        parent::__construct();
+
     }
 
     public function vectorMultiplication(): float

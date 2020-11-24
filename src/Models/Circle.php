@@ -2,6 +2,9 @@
 
 namespace Models;
 
+
+use Database\DB;
+
 /**
  * Class circle Вспомогательный класс для вычисления площади круга
  */
@@ -36,6 +39,9 @@ class Circle extends Figure
         $this->y2 = $y2;
 
         $this->radiusLength = sqrt(($x2 - $x1) ** 2 + ($y2 - $y1) ** 2);
+        parent::__construct();
+
+
 
     }
 

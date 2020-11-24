@@ -1,7 +1,6 @@
 <?php
 namespace Database;
 
-require_once "createDatabase.php";
 class DB
 {
     /**
@@ -11,7 +10,7 @@ class DB
 
     public function __construct()
     {
-        $this->connection = new \SQLite3("Database/test.db");
+        $this->connection = new \PDO("sqlite:". DBROOT . DIRECTORY_SEPARATOR .  "test.db");
     }
 
     /**
@@ -24,12 +23,12 @@ class DB
         $sth = $this
             ->connection
             ->prepare("INSERT INTO points (x,y) VALUES (:x, :y)");
-        $sth->bindParam(':x',$x);
-        $sth->bindParam(':y',$y);
+        $sth->bindValue(':x',$x);
+        $sth->bindValue(':y',$y);
         $sth->execute();
 
 
-        return $this->connection->lastInsertRowID();
+        return $this->connection->lastInsertID();
     }
 
     /**
@@ -48,7 +47,7 @@ class DB
 
 
 
-        return $this->connection->lastInsertRowID();
+        return $this->connection->lastInsertID();
     }
     public function savePointType($pointType)
     {
@@ -67,11 +66,11 @@ class DB
     {
         $figure = "INSERT INTO figures (type,area) VALUES (:type,:area)";
         $sth = $this->connection->prepare($figure);
-        $sth->bindParam(':type',$type);
-        $sth->bindParam(':area',$area);
+        $sth->bindValue(':type',$type);
+        $sth->bindValue(':area',$area);
         $sth->execute();
 
-        return $this->connection->lastInsertRowID();
+        return $this->connection->lastInsertID();
     }
 
     /**
@@ -83,7 +82,7 @@ class DB
     {
         $sth=$this->connection->prepare($sql);
         foreach ($params as $key => $val) {
-            $sth->bindParam($key, $val);
+            $sth->bindValue($key, $val);
         }
 
         return $sth->execute();
