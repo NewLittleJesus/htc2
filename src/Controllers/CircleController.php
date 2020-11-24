@@ -13,10 +13,10 @@ class CircleController extends BaseController
 
     public function add()
     {
-        if ((!preg_match("/^0-9]+$/", $_POST['CenterX'])) &&
-            (!preg_match("/^0-9]+$/", $_POST['CenterY'])) &&
-            (!preg_match("/^0-9]+$/", $_POST['RadX'])) &&
-            (!preg_match("/^0-9]+$/", $_POST['RadY'])))
+        if ((preg_match("/^0-9]+$/", $_POST['CenterX'])) &&
+            (preg_match("/^0-9]+$/", $_POST['CenterY'])) &&
+            (preg_match("/^0-9]+$/", $_POST['RadX'])) &&
+            (preg_match("/^0-9]+$/", $_POST['RadY'])))
             {
                 $this->redirect('http://htc2/public/figure/error');
             }

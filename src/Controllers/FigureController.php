@@ -13,6 +13,6 @@ class FigureController extends BaseController
 
     public function error()
     {
-        $this->error();
+        $this->renderError();
     }
 }

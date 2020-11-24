@@ -11,17 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32951710-d9ee-40d2-b1cb-b58247b97e8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Views/error.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/BaseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/CircleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/CircleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/FigureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FigureController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/ParallelogramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ParallelogramController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/TriangleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TriangleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Database/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/test.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Parallelogram.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Parallelogram.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Triangle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Triangle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/list.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,8 @@
       <workItem from="1606127360969" duration="10094000" />
       <workItem from="1606148380085" duration="11701000" />
       <workItem from="1606211881209" duration="2184000" />
-      <workItem from="1606214675575" duration="13068000" />
+      <workItem from="1606214675575" duration="13118000" />
+      <workItem from="1606237328516" duration="2507000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1603889409677</created>
@@ -293,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606233180092</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Налажена работоспособность приложения">
+      <created>1606236732973</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606236732973</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,10 +364,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606128719205" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1606233177838">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1606236726216">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606233177838" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606236726216" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604654899090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -399,10 +404,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="484" y="269" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604653925710" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1604056502467">
+    <state x="339" y="157" key="run.anything.popup" timestamp="1606237375038">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604056502467" />
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606237375038" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604662577222">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

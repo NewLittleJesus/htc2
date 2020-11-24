@@ -14,12 +14,12 @@ class TriangleController extends BaseController
 
     public function add()
     {
-        if ((!preg_match("/^0-9]+$/", $_POST['AonX'])) &&
-            (!preg_match("/^0-9]+$/", $_POST['AonY'])) &&
-            (!preg_match("/^0-9]+$/", $_POST['BonX'])) &&
-            (!preg_match("/^0-9]+$/", $_POST['BonY'])) &&
-            (!preg_match("/^0-9]+$/", $_POST['ConX'])) &&
-            (!preg_match("/^0-9]+$/", $_POST['ConY'])))
+        if ((preg_match("/^0-9]+$/", $_POST['AonX'])) &&
+            (preg_match("/^0-9]+$/", $_POST['AonY'])) &&
+            (preg_match("/^0-9]+$/", $_POST['BonX'])) &&
+            (preg_match("/^0-9]+$/", $_POST['BonY'])) &&
+            (preg_match("/^0-9]+$/", $_POST['ConX'])) &&
+            (preg_match("/^0-9]+$/", $_POST['ConY'])))
         {
             $this->redirect('http://htc2/public/figure/error');
         }

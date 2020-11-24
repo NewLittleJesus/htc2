@@ -39,7 +39,7 @@ class BaseController
     {
         $this->render('list.php');
     }
-    public function error()
+    public function renderError()
     {
         $this->render('error.php');
     }
