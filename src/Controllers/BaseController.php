@@ -39,6 +39,10 @@ class BaseController
     {
         $this->render('list.php');
     }
+    public function error()
+    {
+        $this->render('error.php');
+    }
 
     public function figureChange()
     {

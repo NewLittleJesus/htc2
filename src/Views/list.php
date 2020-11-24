@@ -22,9 +22,8 @@
     </tr>
 <?php
 
-$db = new PDO("sqlite:C:/Users/Кирилл/Desktop/workspace/1/OpenServer/Domains/htc2/src/Database/test.db");
+$db = new \PDO("sqlite:". DBROOT . DIRECTORY_SEPARATOR . "test.db");
 $sth = $db->query("SELECT type, area FROM 'figures'");
-//$result = $sth->fetchAll(SQLITE3_ASSOC);
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($result as $item) {

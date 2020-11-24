@@ -11,4 +11,8 @@ class FigureController extends BaseController
         $this->renderList();
     }
 
+    public function error()
+    {
+        $this->error();
+    }
 }

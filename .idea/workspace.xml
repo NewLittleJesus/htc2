@@ -11,15 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32951710-d9ee-40d2-b1cb-b58247b97e8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Views/error.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/createDatabase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/createDatabase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/CircleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/CircleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/FigureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FigureController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/ParallelogramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ParallelogramController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/TriangleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/TriangleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Database/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/test.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Circle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Circle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Parallelogram.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Parallelogram.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Triangle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Triangle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Views/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,7 @@
       <workItem from="1606127360969" duration="10094000" />
       <workItem from="1606148380085" duration="11701000" />
       <workItem from="1606211881209" duration="2184000" />
-      <workItem from="1606214675575" duration="9723000" />
+      <workItem from="1606214675575" duration="13068000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1603889409677</created>
@@ -284,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606219209547</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Налажена работоспособность приложения">
+      <created>1606233180092</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606233180092</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +327,8 @@
     <MESSAGE value="Незначительные изменения в Controllers" />
     <MESSAGE value="Доработка ЧПУ, по урлам приходит куда нужно" />
     <MESSAGE value="Налажена работоспособность переходов на страницы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Налажена работоспособность переходов на страницы" />
+    <MESSAGE value="Налажена работоспособность приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Налажена работоспособность приложения" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="6" key="#PHP" timestamp="1604056712065">
@@ -337,10 +347,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606166934343" />
-    <state x="435" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606165493418">
+    <state x="435" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606236182534">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="435" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1606165493418" />
+    <state x="435" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1606236182534" />
     <state x="488" y="44" key="#com.intellij.ide.util.MemberChooser" timestamp="1604656808865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -349,10 +359,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606128719205" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1606219206945">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1606233177838">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606219206945" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606233177838" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1604654899090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -369,10 +379,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="418" y="85" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604834752637" />
-    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1606128515857">
+    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1606236189648">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606128515857" />
+    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606236189648" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1604654029030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
