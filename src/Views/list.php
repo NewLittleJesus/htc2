@@ -22,8 +22,8 @@
     </tr>
 <?php
 
-$db = new SQLite3("test.db");
-$sth = $db->query("SELECT type, area FROM figures");
+$db = new SQLite3("src/Database/test.db", SQLITE3_OPEN_READWRITE);
+$sth = $db->query("SELECT 'type', 'area' FROM 'figures'");
 $result = $sth->fetchArray(SQLITE3_ASSOC);
 
 foreach ($result as $item) {
@@ -36,18 +36,4 @@ foreach ($result as $item) {
 </body>
 </html>
 </table>
-<?php
-require_once 'src/Models/Circle.php';
-require_once 'src/Models/Triangle.php';
-require_once 'src/Models/Parallelogram.php';
-
-$db = new SQLite3("test.db");
-$sth = $db->query("SELECT type, area FROM figures");
-
-$result = $sth->fetchArray(SQLITE3_ASSOC);
-
-foreach ($result as $item) {
-
-}
-?>
 

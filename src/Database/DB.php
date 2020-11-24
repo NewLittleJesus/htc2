@@ -1,6 +1,7 @@
 <?php
 namespace Database;
 
+require_once "createDatabase.php";
 class DB
 {
     /**
@@ -10,7 +11,7 @@ class DB
 
     public function __construct()
     {
-        $this->connection = new \SQLite3("test.db");
+        $this->connection = new \SQLite3("Database/test.db");
     }
 
     /**
