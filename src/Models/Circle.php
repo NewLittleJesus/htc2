@@ -89,5 +89,3 @@ $circle = new circle(
     $_POST['RadX'],
     $_POST['RadY']
 );
-//$circleArea = $circle->calculateArea();
-//echo $circleArea;
